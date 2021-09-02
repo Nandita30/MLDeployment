@@ -1,5 +1,5 @@
-from flask import Flask, render_template, request,jsonify
-from flask_cors import CORS,cross_origin
+from flask import Flask, render_template, request,jsonify #flask is a library that is used to create a app or route for a particular map
+from flask_cors import CORS,cross_origin #cors is used to deploy a other region data or url in our reqion (cross origin transaction)
 import requests
 from bs4 import BeautifulSoup as bs
 from urllib.request import urlopen as uReq
@@ -8,12 +8,12 @@ app = Flask(__name__)
 
 @app.route('/',methods=['GET'])  # route to display the home page
 @cross_origin()
-def homePage():
-    return render_template("index.html")
+def homePage(): #this is the home page
+    return render_template("index.html") #render_template which can expose the home page
 
 @app.route('/review',methods=['POST','GET']) # route to show the review comments in a web UI
 @cross_origin()
-def index():
+def index(): #this is the index page
     if request.method == 'POST':
         try:
             searchString = request.form['content'].replace(" ","")
