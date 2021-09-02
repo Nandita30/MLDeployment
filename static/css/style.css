@@ -1,5 +1,5 @@
 body {
-  background-color: #808000;
+  background-color: #6495ED;
 }
 body * {
   box-sizing: border-box;
@@ -47,7 +47,7 @@ table td:last-child {
   text-align: left;
 }
 table th {
-  background-color: #daeff1;
+  background-color: #327a81;
   font-weight: 300;
 }
 table tr:nth-child(2n) {
