@@ -1,12 +1,12 @@
 body {
-  background-color: #1B2631;
+  background-color: #91ced4;
 }
 body * {
   box-sizing: border-box;
 }
 
 .header {
-  background-color: #F0B27A;
+  background-color: #327a81;
   color: white;
   font-size: 1.5em;
   padding: 1rem;
@@ -47,7 +47,7 @@ table td:last-child {
   text-align: left;
 }
 table th {
-  background-color: #327a81;
+  background-color: #daeff1;
   font-weight: 300;
 }
 table tr:nth-child(2n) {
